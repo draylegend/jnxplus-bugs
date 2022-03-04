@@ -1,0 +1,23 @@
+{
+  "root": "libs/greeting",
+  "projectType": "library",
+  "sourceRoot": "libs/greeting/src",
+  "targets": {
+    "build": {
+      "executor": "@jnxplus/nx-boot-maven:build"
+    },
+    "lint": {
+      "executor": "@jnxplus/nx-boot-maven:lint",
+      "options": {
+        "linter": "ktlint"
+      }
+    },
+    "test": {
+      "executor": "@jnxplus/nx-boot-maven:test"
+    },
+    "kformat": {
+      "executor": "@jnxplus/nx-boot-maven:kformat"
+    }
+  },
+  "tags": ["scope:greeting", "type:domain"]
+}

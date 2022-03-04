@@ -1,0 +1,26 @@
+{
+  "root": "apps/api",
+  "projectType": "application",
+  "sourceRoot": "apps/api/src",
+  "targets": {
+    "build": {
+      "executor": "@jnxplus/nx-boot-maven:build"
+    },
+    "serve": {
+      "executor": "@jnxplus/nx-boot-maven:serve"
+    },
+    "lint": {
+      "executor": "@jnxplus/nx-boot-maven:lint",
+      "options": {
+        "linter": "ktlint"
+      }
+    },
+    "test": {
+      "executor": "@jnxplus/nx-boot-maven:test"
+    },
+    "kformat": {
+      "executor": "@jnxplus/nx-boot-maven:kformat"
+    }
+  },
+  "tags": ["scope:apps", "type:app"]
+}
